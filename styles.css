@@ -1,0 +1,379 @@
+@charset "UTF-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+/*ESTE MODIFICA LAS FILAS PARA QUE SE AJUSTEN A LA PANTALLA*/
+.fila {
+	position: relative;
+	width: 100%;
+	height: auto;
+	display: table;
+	clear: both;
+}
+
+/*ESTE MODIFICA LAS COLUMNAS PRINCIPALES PARA QUE SE AJUSTEN A 1000 PIXELES*/
+.contenedor {
+	position: relative;
+	max-width: 1000px; /*esto modifica el ancho de la pagina*/
+	min-width: 320px;
+	height: auto;
+	margin: 0 auto;
+}
+header {
+	height: auto;
+}
+nav {
+	font-size: 16px;
+	position: fixed;
+	top: 0;
+	z-index: 99;
+}
+nav ul {
+	list-style-type: none;
+	background-color:  rgb(255, 77, 77);
+	overflow: hidden;
+}
+nav ul li {
+	float: left;
+}
+nav ul li a {
+	display: block;
+	color: rgb(255, 255, 255);
+	padding: 17px 47px;
+	text-align: center;
+	border-right: solid rgb(255, 255, 255) 1px;
+	border-radius: 5px;
+	font-family: 'Love Ya Like A Sister', cursive;
+}
+#contenedor-buscar {
+	float: right;
+}
+
+#contenedor-buscar input {
+	float: right;
+	height: 50px;
+	padding: 0px 12px;
+	background: url("imagenes/Search_858732.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-color:  rgb(255, 77, 77);
+}
+
+
+nav ul li a:hover {
+	background-color: rgba(255, 163, 130, 1);
+	color: black;
+}
+nav ul li a:active {
+	background-color: rgba(35, 255, 214, 1);
+	color: rgb(0, 0, 0);
+}
+nav ul li a:visited {
+	color: black;
+}
+
+
+#seccion-galery img{
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	background-position: center center;
+}
+
+
+#seccion-dos {
+	padding: 20px ;
+	background-color: white;
+	float: right;
+	width: 95%;
+	position: relative;
+}
+.seccion-video {
+	width: 38% ;
+	position: relative;
+	float: left;
+	margin: 0px 5px;
+}
+.seccion-video h3 {
+	text-align: center;
+	padding: 5px;
+}
+.seccion-video video {
+	width: 500px;
+	height: 300px;
+	background-color: #551473;
+}
+.seccion-texto {
+	width: 31%;
+	position: relative;
+	float: right;
+	margin: 0px 8px;
+}
+.seccion-texto h1 {
+	text-align: center;
+	padding: 3px;
+}
+.seccion-texto p {
+	padding: 7px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.seccion-texto audio{
+	width: 100%;
+}
+.seccion-chat {
+	width: 24%;
+	padding: 10px;
+	position: relative;
+	float: left;
+	margin: 0px 5px;
+	border-radius: 5px;
+	box-shadow: 1px 2px 7px 3px #147373;
+}
+.seccion-chat h3 {
+	padding: 5px;
+}
+.seccion-chat input {
+	height: 30px;
+	width: 100%;
+}
+.seccion-chat input[type="submit"] {
+	padding: 5px;
+	background-color: rgb(99, 103, 114);
+	width: 28%;
+	color: white;
+	text-transform: uppercase;
+}
+
+
+
+#seccion-tres {
+	padding: 20px ;
+	background-color: white;
+	float: right;
+	width: 95%;
+	position: relative;
+}
+.seccion-segundo-texto {
+	position: relative;
+	width: 40%;
+	float: left;
+	margin: 0px 5px;
+}
+.seccion-segundo-texto h1 {
+	text-align: center;
+	padding: 3px;
+}
+.seccion-segundo-texto p {
+	padding: 7px;
+	font-size: 18px;
+	line-height: 1.5;
+}
+.seccion-segundo-texto audio{
+	width: 100%;
+}
+
+
+ul li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+ul.slider {
+	margin:0 auto; /*asi se centran objetos*/
+	position: relative;
+	width:250px;
+	height: 300px;
+	background-color: #333;
+	background-position: center center ;
+}
+ul.slider li {
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+	width: inherit;
+	height: inherit;
+	overflow: hidden;
+	transition: opacity .5s;
+}
+ul.slider li img {
+	width: 100%;
+	height: 100%;
+}
+ul.slider li:first-child {
+	opacity: 1;
+}
+ul.slider li:target {
+	opacity: 1;
+}
+
+ul.menu {
+	text-align: center;
+	margin: 10px;
+}
+ul.menu li {
+	display: inline-block;
+	text-align: center;
+
+}
+ul.menu li a {
+	display: inline-block;
+	text-decoration: none;
+	background-color: #AF2F4D;
+	padding: 0px;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	border-radius: 100%;
+}
+
+#seccion-cuatro {
+	padding: 20px ;
+	background-color:  rgba(255, 163, 130, 1);
+	float: right;
+	width: 95%;
+	position: relative;
+}
+.seccion-mapa iframe{
+	position: relative;
+	float: left;
+	width: 35%;
+	height: 300px;
+}
+.iframe {
+	width: 35%;
+	height: 300px;
+}
+.seccion-paginas {
+	position: relative;
+	width: 60%;
+	height: 300px;
+	float: right;
+	margin: 0px 5px;
+}
+.seccion-paginas h3 {
+	text-align: center;
+	padding: 5px;
+}
+ul.pag {
+	list-style-type: none;
+	background-color: #BA1113;
+	border-radius: 5px;
+	box-shadow: 1px 2px 7px 3px #BA1113;
+	overflow: hidden;
+}
+ul.pag li {
+	margin: 0px 0px;
+	border: solid rgb(255, 252, 252) 1px;
+	height: 90px;
+}
+ul.pag li a {
+	display: block;
+	padding: 17px 38px;
+	height: 50px;
+}
+ul.pag li img {
+	width: 100%;
+	height: 60px;
+	background-position:left;
+	padding: 0px 5px;
+	margin: 2px 5px;
+}
+ul.pag li:hover {
+	opacity: 0.3;
+}
+
+
+#redes {
+	position: relative;
+	float: left;
+	width: 10%;
+	position: fixed;
+	z-index: 99;
+	top: 500px;
+}
+.iconos-redes {
+	float: inline-start;
+	margin: 6px 4px;
+	width: 50px;
+	height: 50px;
+	overflow: hidden;
+	border-radius: 30px;
+}
+.iconos-redes img {
+	width: 100%;
+}
+.iconos-redes a:hover {
+	opacity: 0.3;
+}
+
+
+
+footer {
+	padding: 20px 0px;
+	background-color: #2534fa;
+}
+footer p {
+	color: floralwhite;
+	padding: 7px;
+	font-size: 22px;
+	line-height: 1.5;
+}
+.todo {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.informacion {
+	width: 60% ;
+	padding: 20px;
+}
+.informacion p {
+	line-height: 1.5;
+	margin-top: 20px;
+}
+.contacto {
+	width: 30%;
+	padding: 20px;
+}
+.row {
+	margin-top: 20px;
+	display: flex;
+}
+.row img {
+	width: 50px;
+	height: 50px;
+}
+.row label {
+	margin-left: 20px;
+	margin-top: 10px;
+
+}
+
+
+h3 {
+	font-family: 'Love Ya Like A Sister', cursive;
+	text-align: center;
+}
+
+h1 {
+	font-family: 'Love Ya Like A Sister', cursive;
+}
+.notas {
+	width: 20%;
+	position: relative;
+	float: left;
+	margin: 0, 10px;
+}
+.sub_notas {
+	width: 50%;
+	position: relative;
+	float: left;
+	margin: 0, 10px;
+}
